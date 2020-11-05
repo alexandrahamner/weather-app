@@ -14,10 +14,8 @@
   increases in velocity towards the middle of the animation,
   slowing back down at the end.*/
   animation: gradient 15s ease infinite;
-  border: none;
-  border-radius: 2%;
-  width: 75vw;
-  min-height: 75vh;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 /*The @keyframes CSS at-rule controls the intermediate steps in a
@@ -33,4 +31,23 @@ This gives more control over the intermediate steps of the animation sequence th
   100% {
     background-position: 0% 50%;
   }
+}
+.search-box{
+  width: 100%;
+  padding: 25px;
+}
+.search-bar {
+  padding: 15px
+;
+}
+input[type=text] {
+  width: 130px;
+  height: 25px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
 }
